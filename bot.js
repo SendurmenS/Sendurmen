@@ -4,9 +4,16 @@ const ayarlar = require('./ayarlar.json');
 const chalk = require('chalk');
 const fs = require('fs');
 const moment = require('moment');
+const Music = require('discord.js-musicbot-addon');
 require('./util/eventLoader')(client);
 
 var prefix = ayarlar.prefix;
+
+const music = new Music(client, {
+  youtubeKey: "AIzaSyCRR-umTO4pMhHYTlu-HuvHYC_sRYKZYcE",        // The youtube api key.
+  prefix: ayarlar.prefix,            // Prefix for the commands. Will be used for deafult prefix's for servers.
+  botAdmins: ["293721568226443265"],  // List of ID's for admins (bypasses all permissions).
+});
 
 const log = message => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
