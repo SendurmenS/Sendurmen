@@ -80,12 +80,27 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm selam,  Hoşgeldin :D');
+    msg.reply('Aleyküm selam,  Hoşgeldin ');
   }
 });
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'hayırsız bot') {
+	  if (msg.content.toLowerCase() === 'Kötü Bot') {
     msg.reply('**Öyle Olsun :sob: :sob:** ');
+  }
+});
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 's.a') {
+    msg.reply('Aleyküm selam,  Hoşgeldin ');
+  }
+});
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'hb') {
+    msg.reply('Umarım Eğlenirsin. İyi Günler. 👏 ');
+  }
+});
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'h.b') {
+    msg.reply('Umarım Eğlenirsin. İyi Günler. 👏 ');
   }
 });
 
