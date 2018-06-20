@@ -27,7 +27,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'Yayıncıİfşa',
+  name: 'yayıncıİfşa',
   description: 'Link',
-  usage: 'Yayıncıİfşa'
+  usage: 'yayıncıİfşa'
 };
