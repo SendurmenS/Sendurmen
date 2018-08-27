@@ -8,10 +8,11 @@ exports.run = (client, message, params) => {
   .setTitle("**__SendurmenS__**")
   .setDescription('')
   .setColor(0x00ffff)
-  .addField("**Eğlence Komutları İçin**", `**➽** s!**eglencekomutları** ***(s!ek)*** `)
-  .addField("**Yetkili Komutları İçin**", `**➽** s!**yetkilikomutları** ***(s!yk)*** `)
-  .addField("**Botun Komutları İçin**", `**➽** s!**botkomutları** ***(s!bk)*** `)
-  .addField("**Ana Komutları İçin**", `**➽** s!**anakomutlar** ***(s!ak)*** `)
+  .addField("**NWGamer Owners**", `**➽** ***_ @Hemply_#3296 @LetsR3kt#9232  @Eldrithc_#1698 _***`)
+  .addField("**NWGamer Admins**", `**➽** ***_ @iSendurmen#1345 @LZyrias#8109 _*** `)
+  .addField("", ``)
+  .addField("**NWGAMER İP**", `**➽** ***_ NWGamer.Batihost.Com_ *** `)
+  .addField("**NWGAMER MOTD **", `**➽** ***_ YAKİNDA _*** `)
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
     const longest = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
