@@ -10,7 +10,7 @@ exports.run = (client, message, params) => {
   .setColor(0x00ffff)
   .addField("**NWGamer Owners**", `**➽** ***_ @Hemply_#3296 @LetsR3kt#9232  @Eldrithc_#1698 _***`)
   .addField("**NWGamer Admins**", `**➽** ***_ @iSendurmen#1345 @LZyrias#8109 _*** `)
-  .addField("", ``)
+  .addField("**---**", `**-** ***_ ------------------------ _*** `)
   .addField("**NWGAMER İP**", `**➽** ***_ NWGamer.Batihost.Com_ *** `)
   .addField("**NWGAMER MOTD **", `**➽** ***_ YAKİNDA _*** `)
   if (!params[0]) {
@@ -29,12 +29,12 @@ exports.run = (client, message, params) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['nw', 'nwg', 'server', 'sw'],
+  aliases: ['nwgamer', 'nwg', 'nws', 'server'],
   permLevel: 0
 };
 
 exports.help = {
   name: 'nwgamer',
-  description: 'Sunucumuzu Gösterir',
+  description: 'Sunucunun ip ini gösterir.',
   usage: 'nwgamer'
 };
