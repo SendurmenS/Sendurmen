@@ -5,15 +5,13 @@ var prefix = ayarlar.prefix;
 
 exports.run = (client, message, params) => {
   const embedyardim = new Discord.RichEmbed()
-  .setTitle("Komutlar")
+  .setTitle("**__SendurmenS__**")
   .setDescription('')
   .setColor(0x00ffff)
-  .addField("**NWGamer Owner**", ``)
-  .addField("** -> @LetsR3kt#9232  -> @Hemply_#3296  ->@Eldrithc_#1698 **", ``)
-  .addField("**Bot Sahibi, Admin**",`@iSendurmen#1345`)
-  .addField("****", ``)
-  .addField("**Sunucu İp >>  NWGamer.Batihost.Com **", ``)
-  .setFooter('** Yakında Yeni Komutlar. **')
+  .addField("**Eğlence Komutları İçin**", `**➽** s!**eglencekomutları** ***(s!ek)*** `)
+  .addField("**Yetkili Komutları İçin**", `**➽** s!**yetkilikomutları** ***(s!yk)*** `)
+  .addField("**Botun Komutları İçin**", `**➽** s!**botkomutları** ***(s!bk)*** `)
+  .addField("**Ana Komutları İçin**", `**➽** s!**anakomutlar** ***(s!ak)*** `)
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
     const longest = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
